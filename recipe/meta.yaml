@@ -1,4 +1,4 @@
-{% set version = '0.43' %}
+{% set version = "0.44" %}
 
 package:
   name: r-rastervis
@@ -9,7 +9,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/rasterVis_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/rasterVis/rasterVis_{{ version }}.tar.gz
-  sha256: 944c11224b935893e5ba2a90f242cd430eeae4300cbeb3ff058cc4562091d13c
+  sha256: b0272e71e3f12916131ab87ab1a96cc9520d0eb3c25552b1814a6fb64d1b2a10
 
 build:
   number: 0

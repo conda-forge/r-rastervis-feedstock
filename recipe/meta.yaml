@@ -12,8 +12,8 @@ source:
   sha256: b0272e71e3f12916131ab87ab1a96cc9520d0eb3c25552b1814a6fb64d1b2a10
 
 build:
-  number: 0
-  skip: True  # [win32]
+  noarch: generic
+  number: 1000
   script: R CMD INSTALL --build .
   rpaths:
     - lib/R/lib/

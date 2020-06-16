@@ -1,4 +1,4 @@
-{% set version = "0.47" %}
+{% set version = "0.48" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rasterVis_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rasterVis/rasterVis_{{ version }}.tar.gz
-  sha256: 123ebe870895c2ba3a4b64d8a18bccab5287c831fa14bb0fe07f0d7de61e51d3
+  sha256: 929740686790d94c52464c3fa0a23822192fc9177577d4bed2bbf4f1e16eac26
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -52,12 +52,9 @@ test:
 about:
   home: http://oscarperpinan.github.io/rastervis
   license: GPL-3
-  summary: Methods for enhanced visualization and interaction with raster data. It implements
-    visualization methods for quantitative data and categorical data, both for univariate
-    and multivariate rasters. It also provides methods to display spatiotemporal rasters,
-    and vector fields. See the website for examples.
+  summary: Methods for enhanced visualization and interaction with raster data. It implements visualization methods for quantitative data and categorical data, both for univariate and multivariate rasters. It also provides methods to display spatiotemporal rasters, and vector fields. See the website for examples.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:

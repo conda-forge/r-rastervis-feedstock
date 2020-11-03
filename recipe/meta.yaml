@@ -1,4 +1,4 @@
-{% set version = "0.48" %}
+{% set version = "0.49" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rasterVis_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rasterVis/rasterVis_{{ version }}.tar.gz
-  sha256: 929740686790d94c52464c3fa0a23822192fc9177577d4bed2bbf4f1e16eac26
+  sha256: 738a616840eff67d911abee2b9eaeddaae7bddb749796ff4e5c17386fb812234
 
 build:
   merge_build_host: true  # [win]

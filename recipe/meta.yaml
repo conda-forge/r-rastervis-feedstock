@@ -27,20 +27,22 @@ requirements:
     - r-base
     - r-rcolorbrewer
     - r-hexbin
-    - r-lattice
+    - r-lattice >=0.20_41
     - r-latticeextra
     - r-raster >=2.0_12
     - r-sp >=1.0_6
+    - r-terra
     - r-viridislite
     - r-zoo
   run:
     - r-base
     - r-rcolorbrewer
     - r-hexbin
-    - r-lattice
+    - r-lattice >=0.20_41
     - r-latticeextra
     - r-raster >=2.0_12
     - r-sp >=1.0_6
+    - r-terra
     - r-viridislite
     - r-zoo
 
@@ -51,10 +53,11 @@ test:
 
 about:
   home: http://oscarperpinan.github.io/rastervis
-  license: GPL-3
+  license: GPL-3.0-only
   summary: Methods for enhanced visualization and interaction with raster data. It implements visualization methods for quantitative data and categorical data, both for univariate and multivariate rasters. It also provides methods to display spatiotemporal rasters, and vector fields. See the website for examples.
   license_family: GPL3
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:

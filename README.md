@@ -1,11 +1,11 @@
-About r-rastervis
-=================
+About r-rastervis-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rastervis-feedstock/blob/main/LICENSE.txt)
 
 Home: http://oscarperpinan.github.io/rastervis
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rastervis-feedstock/blob/main/LICENSE.txt)
 
 Summary: Methods for enhanced visualization and interaction with raster data. It implements visualization methods for quantitative data and categorical data, both for univariate and multivariate rasters. It also provides methods to display spatiotemporal rasters, and vector fields. See the website for examples.
 
